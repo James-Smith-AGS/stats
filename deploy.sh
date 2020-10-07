@@ -3,24 +3,18 @@
 # abort on errors
 set -e
 
-# build
+git checkout --orphan gh-pages
+
 npm run build
 
-# navigate into the build output directory
-cd dist
+git --work-tree dist add --all
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+git --work-tree dist commit -m "gh-pages"
 
-git init
-git add -A
-git commit -m 'deploy'
+git push origin HEAD:gh-pages --force
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+rm -r dist
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push --set-upstream master:gh-pages master
-git push -f master:gh-pages
+git checkout -f master
 
-cd -
+git branch -D gh-pages

@@ -43,7 +43,7 @@ export default {
           sortable: true,
         },
         {
-          label: 'Börsenwert',
+          label: 'Marktkapitalisierung',
           key: 'boersenwert',
           sortable: true,
           formatter: (row) => Number(row).toLocaleString(),

@@ -33,7 +33,7 @@ export default {
             value: 'buchwert',
           },
           {
-            text: 'Börsenwert',
+            text: 'Marktkapitalisierung',
             value: 'boersenwert',
           },
           {

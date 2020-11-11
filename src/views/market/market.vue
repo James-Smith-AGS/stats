@@ -167,7 +167,7 @@ export default {
         },
         {
           valueName: 'kurs',
-          label: 'Börsenwert',
+          label: 'Marktkapitalisierung',
           color: '#0000ff', // blue
           colorToolTipLabel: '#fff', // white
         },

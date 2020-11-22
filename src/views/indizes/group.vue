@@ -52,7 +52,7 @@ export default {
         indexChart: [
           {
             valueName: 'boersenwert',
-            label: 'Börsenwert',
+            label: 'Marktkapitalisierung',
             color: '#0000ff', // blue
             colorToolTipLabel: '#fff', // white
           },

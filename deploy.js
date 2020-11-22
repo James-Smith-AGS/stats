@@ -14,9 +14,9 @@ const fs = require('fs');
     console.log('Pushing...');
     await execa('git', ['push', 'origin', 'HEAD:gh-pages', '--force']);
     console.log('Cleaning up ...');
-    await execa('rm', ['-r', folderName]);
+    fs.rmdirSync('dist', { recursive: true });
     await execa('git', ['checkout', '-f', 'main']);
-    await execa('git', ['-D', 'gh-pages']);
+    await execa('git', ['branch', '-D', 'gh-pages']);
     console.log('Successfully published to gh-pages');
   } catch (e) {
     console.log(e.message);

@@ -2,14 +2,18 @@
 
 Dieses Projekt sammelt und visualisiert öffentlich zugängliche Daten des [AG-Spiels](www.ag-spiel.de) bzw. von Userprojekten des AG-Spiels.
 
+Ziel ist es, dass dieses Projekt zukünftig Daten verschiedener Userprojekte auf einer Website bündelt und visualisiert.
+
 Gebaut mit [VueJS](www.vuejs.org) und über [github-pages](https://pages.github.com/) gehosted.
+
+Damit das Hosting dieses Projektes möglichst unabhängig und dezentralisiert möglich ist, wurde Github-Pages als Hosting-Dienst gewählt. So können auch andere Entwickler dieses Projekt mit wenig Aufwand forken, weiterentwicklen und selbst hosten, ohne das dabei laufende Kosten anfallen. 
 
 ## Inhaltsverzeichnis
 - [AG-Spiel Statistiken](#ag-spiel-statistiken)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Funktionsumfang](#funktionsumfang)
   - [Contributing](#contributing)
-  - [Limitierung](#limitierung)
+  - [Limitierungen](#limitierungen)
 
 ## Funktionsumfang
 - Treemap aller Indizes (nach MK, BW, Aktien, Anleihen, Krediten, Bargeld)
@@ -34,14 +38,13 @@ Gebaut mit [VueJS](www.vuejs.org) und über [github-pages](https://pages.github.
   - Entwickung der Anzahl an Premiumspieler (Premium, Kein Premium, Gold-P., Silber-P., Spieleranzahl)
 
 ## Contributing
-1. Clone Repo: `git clone https://github.com/James-Smith-AGS/stats.git`
-2. Projekt Setup: `npm install`
-3. Development compiling: `npm run serve`
-4. Production compiling: `npm run build`
-5. Run Unittests: `npm run test:unit`
-6. Run e2e-tests: `npm run test:e2e`
-7. Check linting: `npm run lint`
+1. Projekt Setup: `npm install`
+2. Development compiling: `npm run serve`
+3. Production compiling: `npm run build`
+4. Run Unittests: `npm run test:unit` (noch nicht implementiert)
+5. Run e2e-tests: `npm run test:e2e` (noch nicht implementiert)
+6. Check linting: `npm run lint`
 
 
-## Limitierung
+## Limitierungen
 Um das kostenlose und einfache hosten der App über Github-Pages zu ermöglichen, wurde eine Singlepage-App mit VueJS erstellt. Einer der Nachteile von SPAs ist jedoch eine etwas schlechtere Performance, die auch nochmal verstärkt durch das jeweilige Endgerät beeinträchtigt werden kann. 
